@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+
+.urbanFont{
+  font-family: 'Urbanist', sans-serif;
+}
+nav{
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(164,86,22,1) 100%, rgba(252,176,69,1) 100%);
+}
+#navabar > li{
+  color: white;
+  display: inline;
+
+}
