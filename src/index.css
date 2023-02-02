@@ -16,3 +16,17 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(164,86,22,1) 100%
   display: inline;
 
 }
+td,th,tr{
+  padding: 5px;
+}
+th,td{
+  border: 2px solid white;
+  
+}
+.personal > tr > td{
+  text-align: left;
+}
+
+.personal > tr > th{
+  text-align: left;
+}

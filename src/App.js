@@ -1,14 +1,16 @@
 import './index.css'
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'
 import Patient from './components/Patient';
+import Side from './components/Side';
 function App() {
   return (
-    <>
+    <div >
+       
+      <Side/>
       <Navbar/>
-      <Footer/>
       <Patient/>
-    </>
+      
+    </div>
   );
 }
 

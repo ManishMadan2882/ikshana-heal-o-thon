@@ -1,0 +1,26 @@
+import '../index.css'
+
+function Side() {
+  return (
+     <div class="w-max h-full p-1 shadow-md bg-black z-10 fixed mt-0 ">
+     <h1 className='urbanFont inline text-xl m-2 text-blue-200 font-semibold '>
+        Ikshana
+        <p className="text-orange-300 inline text-3xl">+</p>
+
+      </h1>
+     <ul class="relative">
+      <li class="relative">
+       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-100 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Doctors</a>
+      </li>
+      <li class="relative">
+       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-100 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Health Workers</a>
+     </li>
+     <li class="relative">
+       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-100 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Logout</a>
+    </li>
+   </ul>
+ </div>
+  );
+}
+
+export default Side;
