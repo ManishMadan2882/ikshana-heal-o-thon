@@ -17,16 +17,32 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(164,86,22,1) 100%
 
 }
 td,th,tr{
-  padding: 5px;
-}
-th,td{
-  border: 2px solid white;
-  
+  padding-inline:10px;
 }
 .personal > tr > td{
   text-align: left;
+
 }
 
 .personal > tr > th{
   text-align: left;
+}
+@media screen and (max-width: 480px) {
+
+  body {
+    width: 480px ;
+    background-color: lightgreen;
+    width:auto;
+    overflow: hidden;
+  }
+  #side{
+    display: none;
+  }
+  *{
+    margin: 0;
+    width: max-content;
+  }
+  .flex{
+    flex-wrap: wrap;
+  }
 }

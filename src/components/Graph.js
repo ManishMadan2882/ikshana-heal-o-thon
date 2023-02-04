@@ -4,24 +4,29 @@ import CanvasJSReact from '../assets/canvasjs.react';
 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 class Graph extends Component {
+
 	render() {
+		const arr = [];
+		this.props.arr.forEach(element => {
+			arr.push({x:new Date(element.date),y:element.value});
+		});
 		const options = {
 			animationEnabled: true,
 			title:{
-				text: "Monthly Sales - 2017"
+				text: "Blood pressure"
 			},
 			axisX: {
-				valueFormatString: "MMM"
+				
 			},
 			axisY: {
-				title: "Sales (in USD)",
-				prefix: "$"
+				title: "Blood Pressure",
+				prefix: "Hg"
 			},
 			data: [{
-				yValueFormatString: "$#,###",
-				xValueFormatString: "MMMM",
+				yValueFormatString: "HG #,###",
+				xValueFormatString: "##,##,####",
 				type: "spline",
-				dataPoints: [
+				dataPoints:arr /* [
 					{ x: new Date(2017, 0), y: 25060 },
 					{ x: new Date(2017, 1), y: 27980 },
 					{ x: new Date(2017, 2), y: 42800 },
@@ -34,7 +39,7 @@ class Graph extends Component {
 					{ x: new Date(2017, 9), y: 42000 },
 					{ x: new Date(2017, 10), y: 37160 },
 					{ x: new Date(2017, 11), y: 38400 }
-				]
+				] */
 			}]
 		}
 		return (

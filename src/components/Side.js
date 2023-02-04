@@ -2,7 +2,7 @@ import '../index.css'
 
 function Side() {
   return (
-     <div class="w-max h-full p-1 shadow-md bg-black z-10 fixed mt-0 ">
+     <div id='side' class="w-max h-full p-1 shadow-md bg-gradient-to-r from-indigo-900 to-blue-900 fixed  z-10 mt-0 ">
      <h1 className='urbanFont inline text-xl m-2 text-blue-200 font-semibold '>
         Ikshana
         <p className="text-orange-300 inline text-3xl">+</p>
