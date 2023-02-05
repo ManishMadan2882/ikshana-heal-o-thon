@@ -2,7 +2,7 @@ import '../index.css'
 
 function Navbar() {
   return (
-    <div className="text-2xl text-black">
+    <div className="text-2xl text-black max-w-screen">
      <nav className='py-2 rounded-b-sm drop-shadow-lg ml-[148px] h-[60px] '>
       <div className='float-right text-lg text-white inline'>
     Dr. Freddy Ginwala

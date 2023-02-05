@@ -27,10 +27,9 @@ td,th,tr{
 .personal > tr > th{
   text-align: left;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
   body {
-    width: 480px ;
     background-color: lightgreen;
     width:auto;
     overflow: hidden;
@@ -44,5 +43,9 @@ td,th,tr{
   }
   .flex{
     flex-wrap: wrap;
+  }
+  nav{
+    margin: 0px;
+    width: 375;
   }
 }

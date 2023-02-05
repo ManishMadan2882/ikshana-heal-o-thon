@@ -4,7 +4,7 @@ function PatientInfo(props){
     return(
         <div className="flex flex-wrap justify-evenly w-full">
         <div className=' rounded-2xl w-[30%] text-center p-2  drop-shadow-xl m-1'>
-        <img src={defImg} alt="Profile" className='w-28 rounded-full inline drop-shadow-xl'></img>
+        <img src={defImg} alt="Profile" className='w-28 rounded-full inline drop-shadow-xl float-left'></img>
           <div className="float-right text-2xl py-3 text-left">
             <h1 className='font-bold'>Patient</h1>
             <h1>{props.obj.name}</h1>
@@ -34,7 +34,7 @@ function PatientInfo(props){
         <table className="text-left personal" >
             <tr>
                 <th>Check-in</th>
-                <td>{props.obj.checkin}</td>
+                <td>{props.obj.Checkin}</td>
             </tr>
             <tr>
                 <th>Department</th>
@@ -42,11 +42,11 @@ function PatientInfo(props){
             </tr>
             <tr>
                 <th>Room</th>
-                <td>{props.obj.personalInfo.room}</td>
+                <td>{props.obj.personalInfo.Room}</td>
             </tr>
             <tr>
                 <th>Bed</th>
-                <td>{props.obj.personalInfo.bed}</td>
+                <td>{props.obj.personalInfo.Bed}</td>
             </tr>
         </table>
       </div>

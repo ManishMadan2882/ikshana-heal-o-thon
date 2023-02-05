@@ -4,6 +4,11 @@ import {Routes, Route,  BrowserRouter as Router} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Patient from './components/Patient';
 import Side from './components/Side';
+import Login from './components/Login';
+import Register from './components/Register'
+import Doctor from './components/Doctor'
+import Worker from './components/Worker';
+import AllPatients from './components/allPatients';
 function App() {
   return (
     <Router >
@@ -11,7 +16,13 @@ function App() {
       <Side/>
       <Navbar/>
       <Routes>
-      <Route path="/patient" element={<Patient/>}/>  
+      <Route path="/dashboard/:room/:bed" element={<Patient/>}/>  
+      <Route path="/login" element={<Login/>}/>  
+      <Route path="/register" element={<Register/>}/> 
+      <Route path="/doctor" element={<Doctor/>}/> 
+      <Route path="/worker" element={<Worker/>}/> 
+      <Route path="/patients" element={<AllPatients/>}/> 
+       
       </Routes>
      
     </Router>

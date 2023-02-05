@@ -4,7 +4,14 @@ import History from './History';
 import Graph from './Graph';
 import Card from './Card';
 import Todo from './Todo';
-function Patient() {
+import { useParams } from 'react-router-dom';
+// import Filter from'./Filter';
+function Patient(props) {
+ let room,bed;
+ const params=useParams();
+ room=params.room;
+ bed=params.bed;
+console.log(room+bed);
  const patient = {
   "name":"Adam Waheed",
   "personalInfo":{
